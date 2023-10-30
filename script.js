@@ -48,19 +48,19 @@ function chequearResultado() {
     }
 }
 
-function reseteo() { //vuelve a reinicializar las variables y aspecto del juego
-    intentosRestantes = 5;
-    intento.textContent = intentosRestantes;
-    numeroAzar = Math.floor(Math.random() * 100) + 1;
-    comprobar.disabled = false; // Habilita el botón nuevamente
-    mensaje.textContent = "";
-    numeroEntrada.value = ""; // Limpia el campo de entrada
-    numeroEntrada.disabled = false;
-    reset.style.display = "none";
-    comprobar.style.background = "#4CAF50"
-    comprobar.disabled = false;
-}
-
-// function reseteo() {
-//     location.reload(true)
+// function reseteo() { //vuelve a reinicializar las variables y aspecto del juego
+//     intentosRestantes = 5;
+//     intento.textContent = intentosRestantes;
+//     numeroAzar = Math.floor(Math.random() * 100) + 1;
+//     comprobar.disabled = false; // Habilita el botón nuevamente
+//     mensaje.textContent = "";
+//     numeroEntrada.value = ""; // Limpia el campo de entrada
+//     numeroEntrada.disabled = false;
+//     reset.style.display = "none";
+//     comprobar.style.background = "#4CAF50"
+//     comprobar.disabled = false;
 // }
+
+function reseteo() {
+    location.reload(true) 
+}
