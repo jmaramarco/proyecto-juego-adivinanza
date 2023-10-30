@@ -40,10 +40,11 @@ function chequearResultado() {
     
     intento.textContent = intentosRestantes;
 
-    if (intentosRestantes === 0 && numeroEntrada != numeroAzar) {
+    if (intentosRestantes === 0 && numeroEntrada) {
         mensaje.textContent = "¡Has agotado tus 5 intentos! El número era " + numeroAzar + ".";
         comprobar.disabled = true;      // Deshabilita el botón después de agotar los intentos
         comprobar.style.background = 'gray';
+        numeroEntrada.disabled = true;
         reset.style.display = "block";
     }
 }
