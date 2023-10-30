@@ -6,6 +6,7 @@ let intento = document.getElementById('intento');
 let intentos = 0;
 var reset = document.getElementById('reset')
 var intentosRestantes = 5;
+intento.textContent = intentosRestantes;
 
 function chequearResultado() {
 

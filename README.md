@@ -1,6 +1,38 @@
+
+
+## MODIFICACIONES POR JOSE MARIA MARAMARCO
+
+* Solo se cuentan con 5 intentos para ganar el juego
+
+* cuando se termina el juego (se gane o se pierda), se habilita un boton que permite volver a jugar ese elemento llama a la funcion reseteo()
+
+### funcion Reseteo()
+
+function reseteo() {
+    intentosRestantes = 5;
+    intento.textContent = intentosRestantes;
+    numeroAzar = Math.floor(Math.random() * 100) + 1;
+    comprobar.disabled = false; // Habilita el botón nuevamente
+    mensaje.textContent = "";
+    numeroEntrada.value = ""; // Limpia el campo de entrada
+    numeroEntrada.disabled = false;
+    reset.style.display = "none";
+    comprobar.style.background = "#4CAF50"
+    comprobar.disabled = false;
+}
+
+### otra alternativa a la funcion reseteo()
+
+function reseteo() {
+    location.reload(true)
+}
+
+Este código recargará la página actual y forzará la descarga de contenido nuevo desde el servidor. 
+
+=================================================================================================================================================
+
 ## Link al curso completo de Javascript en Youtube:
 [VIDEO CURSO GRATIS COMPLETO: JavaScript Desde Cero por Sergie Code](https://youtu.be/N8Xt5rP_DUo)
-
 
 # Tutorial de Javascript: Juego de Adivinanza
 
